@@ -348,6 +348,9 @@ Jun  6 04:17:04 host sshd[1189074]: Invalid user  from 192.0.2.68 port 34916
 # failJSON: { "time": "2005-06-06T04:17:09", "match": true , "host": "192.0.2.68", "dns": null, "user": "", "desc": "empty user, gh-2749" }
 Jun  6 04:17:09 host sshd[1189074]: Connection closed by invalid user  192.0.2.68 port 34916 [preauth]
 
+# failJSON: { "time": "2005-06-06T04:17:10", "match": true , "host": "192.0.2.77", "dns": null, "user": "x 192.0.2.1 on", "desc": "Injecting on username 'x 192.0.2.1 on'" }
+Jun  6 04:17:10 host sshd[1189075]: Connection closed by invalid user x 192.0.2.1 on 192.0.2.77 port 4444 [preauth]
+
 # failJSON: { "match": false, "desc": "ddos-failure without IP, retarded, must be triggered with next (closed) message, gh-3086"}
 Jun  7 04:10:35 host sshd[424228]: error: kex_exchange_identification: Connection closed by remote host
 # failJSON: { "time": "2005-06-07T04:10:35", "match": true , "host": "192.0.2.15", "desc": "kex_exchange_identification: Connection closed, gh-3086" }
